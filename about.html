@@ -55,7 +55,7 @@
         .timeline {
             position: relative;
             margin: 30px 0;
-            padding-left: 30px;
+            padding-left: 25px;
             border-left: 2px solid #334155;
         }
 
@@ -103,6 +103,32 @@
             font-size: 0.9em;
             border-radius: 0 4px 4px 0;
         }
+
+        /* Fixed Download Button Styles */
+        .download-container {
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        #downloadPoster {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(90deg, #3b82f6, #0ea5e9);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            border: none;
+            cursor: pointer;
+        }
+
+        #downloadPoster:hover {
+            background: linear-gradient(90deg, #0ea5e9, #3b82f6);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 
@@ -115,6 +141,11 @@
     <p>This project was developed for <span class="highlight">The Secret World of Microbes</span> course (Spring 2025)
         taught by <a href="https://habib.edu.pk/SSE/humaira-qureshi/"><b>Dr. Humaira Qureshi</b></a>
         at Habib University.</p>
+
+    <div class="download-container">
+        <a id="downloadPoster" href="ResistoMeterSimulationPoster.pdf" download target="_blank">Download Poster
+            (PDF)</a>
+    </div>
 
     <h2>Data Sources</h2>
     <p>The JSON data used in this simulation is available <a href="data/bacteria_data.json"><b>here</b></a>,

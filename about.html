@@ -122,6 +122,7 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
             border: none;
             cursor: pointer;
+            width: 250px;
         }
 
         #downloadPoster:hover {
@@ -130,6 +131,16 @@
             transform: translateY(-2px);
         }
     </style>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-light.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css">
 </head>
 
 <body>
@@ -143,7 +154,14 @@
         at Habib University.</p>
 
     <div class="download-container">
-        <a id="downloadPoster" href="ResistoMeterSimulationPoster.pdf" download target="_blank">Download Poster
+        <a id="downloadPoster" href="ResistoMeter Abstract.pdf" download target="_blank"><i
+                class="fa-solid fa-arrow-down-to-line"></i> Download Abstract
+            (PDF)</a>
+    </div>
+
+    <div class="download-container">
+        <a id="downloadPoster" href="ResistoMeter Simulation Poster.pdf" download target="_blank"><i
+                class="fa-solid fa-arrow-down-to-line"></i> Download Poster
             (PDF)</a>
     </div>
 
@@ -235,7 +253,7 @@
         <li><span class="highlight">Mutation Rate</span>: Probability of resistance developing</li>
     </ul>
 
-    <p>For the complete implementation, see <span class="highlight">js/simulation/growthModel.js</span> in the project
+    <p>For the complete implementation of growth model, see <a href="js/simulation/growthModel.js" target="_blank"><span class="highlight">js/simulation/growthModel.js</span></a> in the project
         source.</p>
 </body>
 
